@@ -51,7 +51,7 @@ const bestDestinations = [
 function MiddlePane() {
   return (
     <div className="flex-[8] bg-white">
-      <div className="bg-gray-200 p-5 mt-4 rounded-3xl mr-2 ml-2 h-full ">
+      <div className="bg-gray-200 p-5 mt-4 rounded-3xl mr-2 ml-2 h-[1000px] ">
         <div className="flex justify-between items-center">
           <div className="">
             <span className="text-3xl font-bold">Hello,Jemmy👋</span>

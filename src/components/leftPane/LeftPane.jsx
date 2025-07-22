@@ -8,7 +8,7 @@ import Frame8 from "../../../public/Frame 8.png";
 
 function LeftPane() {
   return (
-    <div className="flex-[2] w-20 md:w-64 bg-white shadow-xl flex flex-col items-center md:items-start py-10 px-3 md:px-10 gap-6 md:gap-10">
+    <div className="flex-[2]  md:w-64 bg-white shadow-xl flex flex-col items-center md:items-start py-10 px-3 md:px-10 gap-6 md:gap-15 mt-4 max-h-full">
       
       
       <h1 className="text-xl md:text-3xl font-bold text-center md:text-left hidden md:block">
