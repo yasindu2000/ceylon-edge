@@ -57,14 +57,14 @@ function MiddlePane() {
             <span className="text-3xl font-bold">Hello,Jemmy👋</span>
             <p className="mt-1">Welcome back and explore the world</p>
           </div>
-          <div className="flex-row flex items-center gap-2 relative">
-            <IoSearch className="text-2xl text-gray-400 absolute left-2 " />
+          <div className="flex-row flex items-center gap-2 relative ">
+            <IoSearch className="text-2xl text-gray-400 absolute left-2 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer" />
             <input
               type="text"
-              className="pl-10 pr-4 py-1.5 rounded-full bg-white shadow-sm focus:outline-none"
+              className="pl-10 pr-4 py-1.5 rounded-full bg-white shadow-sm focus:outline-none cursor-pointer "
               placeholder="Search direction"
             />
-            <div className="flex relative">
+            <div className="flex relative  transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
               <IoMdNotifications className="text-4xl rounded-full bg-white p-2 text-gray-400" />
               <span className="bg-red-600 w-[11px] h-[11px] rounded-full  absolute left-5 flex items-center justify-center text-[8px] mt-1  ">
                 4
@@ -76,7 +76,7 @@ function MiddlePane() {
           {destinations.map((item, id) => (
             <div
               key={id}
-              className="rounded-2xl overflow-hidden shadow-lg relative h-80 w-60 bg-cover bg-center "
+              className="rounded-2xl overflow-hidden shadow-lg relative h-80 w-60 bg-cover bg-center transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer "
               style={{ backgroundImage: `url(${item.image})` }}
             >
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-4">
@@ -107,7 +107,7 @@ function MiddlePane() {
                   </div> 
               <div className="space-y-4 mt-5">
             {bestDestinations.map((item, idx) => (
-              <div key={idx} className="flex items-center bg-white p-4 rounded-xl shadow">
+              <div key={idx} className="flex items-center bg-white p-4 rounded-xl shadow transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
                 <img src={item.image} alt={item.title} className="w-16 h-16 rounded-xl mr-4 object-cover" />
                 <div className="flex-1">
                   <h3 className="font-semibold">{item.title}</h3>
@@ -136,7 +136,7 @@ function MiddlePane() {
           </div>
           <h3 className="font-bold  mt-4 text-center text-3xl">Let's Explore<br/><span>the beauty</span> </h3>
           <p className="text-sm text-center mb-4">Get special offers & news</p>
-          <button className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600">Join now</button>
+          <button className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 cursor-pointer">Join now</button>
         </div>
     </div>
         </div>    

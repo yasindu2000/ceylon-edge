@@ -25,7 +25,7 @@ function RightPane() {
     <div className='flex-[3] '>
       <div className="flex flex-row items-center justify-between">
         <div className="flex items-center gap-3 p-5">
-          <img src="/public/man.png" alt="" className="" />
+          <img src="/public/man.png" alt="" className="transition-transform duration-300 hover:scale-110  cursor-pointer" />
           <p className="font-semibold">Jemmy Max<br/><span className='text-[14px]'>Traveler Enthuslast</span></p>
         </div>
           <div className="w-10 h-10 mr-5 items-center justify-center ">
@@ -69,7 +69,7 @@ function RightPane() {
 
          <div className="space-y-3">
             {scheduleItems.map((item, idx) => (
-              <div key={idx} className=" p-3 rounded-3xl flex items-center border-2 border-gray-300 py-5 px-4 w-[90%] ml-3">
+              <div key={idx} className=" p-3 rounded-3xl flex items-center border-2 border-gray-300 py-5 px-4 w-[90%] ml-3 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
                 <img src={item.image} alt={item.title} className="w-16 h-16 rounded-lg mr-3 object-cover " />
                 <div>
                   <h4 className="font-medium text-sm">{item.title}</h4>

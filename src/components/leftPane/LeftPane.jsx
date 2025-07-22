@@ -55,7 +55,7 @@ function LeftPane() {
         </button>
 
         
-        <div className="hidden md:block w-full mr-[-8]">
+        <div className="hidden md:block w-full mr-[-8] transform transition-transform duration-300 hover:scale-105 cursor-pointer">
           <img
             src={Frame8}
             alt="Discount"
