@@ -51,7 +51,7 @@ const bestDestinations = [
 function MiddlePane() {
   return (
     <div className="flex-[8] bg-white">
-      <div className="bg-gray-200 p-5 mt-4 rounded-3xl mr-2 ml-2 h-[1000px] ">
+      <div className="bg-gray-100 p-5 mt-4 rounded-3xl mr-2 ml-2 h-[1000px] ">
         <div className="flex justify-between items-center">
           <div className="">
             <span className="text-3xl font-bold">Hello,Jemmy👋</span>
@@ -61,7 +61,7 @@ function MiddlePane() {
             <IoSearch className="text-2xl text-gray-400 absolute left-2 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer" />
             <input
               type="text"
-              className="pl-10 pr-4 py-1.5 rounded-full bg-white shadow-sm focus:outline-none cursor-pointer "
+              className="pl-10 pr-4 py-3 rounded-full bg-white shadow-sm focus:outline-none cursor-pointer text-[15px]"
               placeholder="Search direction"
             />
             <div className="flex relative  transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">

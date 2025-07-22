@@ -47,13 +47,18 @@ function RightPane() {
           <div className="grid grid-cols-7 gap-2 text-center">
             {[...Array(31)].map((_, i) => {
               const day = i + 1;
-              const isSelected = [21,22,23,24].includes(day);
+              const isSelected = [21,24].includes(day);
+              const isSelectedMiddle = [22,23].includes(day);
+              const isSelectedMiddleAll = [[21,22,23,24]].includes(day);
               const isToday = day === 4;
               return (
                 <div
                   key={day}
                   className={`rounded-full w-8 h-8 flex items-center justify-center text-sm
-                    ${isSelected ? 'bg-green-500 text-white' : ''}
+                    ${isSelected ? 'bg-green-500 text-white ' : ''}
+                    ${isSelectedMiddle ? 'text-green-500' : ''}
+                    
+                    ${isSelectedMiddleAll ? 'border-5' : ''}
                     ${isToday ? 'border border-green-500' : ''}`}
                 >
                   {day <= 31 ? day : ""}
